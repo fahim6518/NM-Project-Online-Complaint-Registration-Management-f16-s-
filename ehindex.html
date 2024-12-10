@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="An online complaint registration and management system built using the MERN stack.">
+    <meta name="keywords" content="complaint system, online complaints, MERN stack, React, Node, Express, MongoDB">
+    <meta name="robots" content="index, follow">
+
+    <title>Complaint Registration System</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS for Layout and Components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom Meta Tag for SEO -->
+    <meta name="theme-color" content="#4CAF50">
+
+    <style>
+        /* Additional Styles */
+        .navbar-custom {
+            background-color: #4CAF50;
+        }
+
+        .navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section with Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Complaint System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#complaints">Submit Complaint</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5" id="home">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Welcome to the Complaint Management System</h1>
+                <p class="lead">Submit your complaints easily and track their status in real-time.</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="row" id="about">
+            <div class="col-12">
+                <h2>About the System</h2>
+                <p>The Online Complaint Registration and Management System is built using the MERN stack (MongoDB, Express, React, and Node.js). It provides a platform for users to submit complaints, track their status, and receive updates.</p>
+            </div>
+        </div>
+
+        <!-- Complaint Form Section -->
+        <div class="row" id="complaints">
+            <div class="col-12">
+                <h2>Submit a Complaint</h2>
+                <form action="#">
+                    <div class="mb-3">
+                        <label for="complaintTitle" class="form-label">Complaint Title</label>
+                        <input type="text" class="form-control" id="complaintTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="complaintDescription" class="form-label">Complaint Description</label>
+                        <textarea class="form-control" id="complaintDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="complaintCategory" class="form-label">Category</label>
+                        <select class="form-select" id="complaintCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Service">Service</option>
+                            <option value="General">General</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Complaint</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2024 Complaint System. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- React Scripts (For actual React app) -->
+    <script src="src/index.js"></script>
+</body>
+
+</html>
